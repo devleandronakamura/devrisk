@@ -1,4 +1,4 @@
-﻿using DevRisk.Application.Services;
+﻿using DevRisk.Console.Domain.Services;
 
 Console.WriteLine("Informe a data de referência: ");
 string date = Console.ReadLine();
@@ -6,9 +6,4 @@ string date = Console.ReadLine();
 Console.WriteLine("Informe a quantidade de operação: ");
 string operationQuantity = Console.ReadLine();
 
-List<string> results = RiskServiceApp.Calculate(date, operationQuantity);
-
-foreach (string result in results)
-{
-    Console.WriteLine(result);
-}
+RiskServiceApp.Classify(date, operationQuantity);

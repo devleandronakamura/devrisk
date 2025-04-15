@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DevRisk.Application\DevRisk.Application.csproj" />
-  </ItemGroup>
-
 </Project>

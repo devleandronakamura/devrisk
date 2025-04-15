@@ -1,11 +1,9 @@
-﻿using DevRisk.Domain.Enums;
-
-namespace DevRisk.Domain.Interfaces
+﻿namespace DevRisk.Console.Domain.Interfaces
 {
     public interface ITrade
     {
         double Value { get; }
-        ClientSector ClientSector { get; }
+        string ClientSector { get; }
         DateTime NextPaymentDate { get; }
     }
 }
